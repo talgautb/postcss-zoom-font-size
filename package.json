@@ -1,6 +1,6 @@
 {
   "name": "postcss-zoom-font-size",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "PostCSS plugin zoom you font-size in new CSS file.",
   "keywords": [
     "postcss",
@@ -25,9 +25,7 @@
     "eslint-config-postcss": "^2.0.2"
   },
   "scripts": {
-    "test": "ava && eslint *.js",
-    "prepublish": "npm version patch",
-    "postpublish": "git push --follow-tags"
+    "test": "ava && eslint *.js"
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss/es5"
