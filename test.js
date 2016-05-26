@@ -21,7 +21,7 @@ test('font-size without zoom', t => {
 test('font-size with zoom in 150% and rem', t => {
     return run(t,
         'a{ font-size: 1rem; }',
-        'a{ }',
+        '',
         { zoom: 150 });
 });
 
@@ -35,13 +35,20 @@ test('test with zoom in 200%', t => {
 test('test for fractional values', t => {
     return run(t,
         'a{ font-size: .5em; }',
-        'a{ }',
+        '',
         { });
 });
 
 test('test for string/text value', t => {
     return run(t,
         'p.class { font-size: inherit; }',
-        'p.class { }',
+        '',
+        { });
+});
+
+test('test for @font-face', t => {
+    return run(t,
+        '@font-face { font-family: Arial, sans-serif; }',
+        '',
         { });
 });

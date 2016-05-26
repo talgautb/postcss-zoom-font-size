@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.1.3
+
+- fix bug in test.js
+- add tests
+- add `npm deploy`
+
 ## 0.1.2
 
 - Delete atrule: font-face
