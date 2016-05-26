@@ -18,6 +18,12 @@ module.exports = postcss.plugin('postcss-zoom-font-size', function (opts) {
             }
         });
 
+        css.walkAtRules( function (rule) {
+            if (!rule.nodes.length) {
+                rule.remove();
+            }
+        });
+
         css.walkDecls(function (decl) {
             if (decl.prop === 'font-size') {
                 var str = decl.value;
@@ -26,7 +32,7 @@ module.exports = postcss.plugin('postcss-zoom-font-size', function (opts) {
                 if (val) {
                     decl.value = parseFloat(str) * zoom / 100 + val[0];
                 } else {
-                    decl.remove();
+                    decl.parent.remove();
                 }
             } else {
                 decl.remove();
