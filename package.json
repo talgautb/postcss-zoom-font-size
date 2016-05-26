@@ -1,0 +1,33 @@
+{
+  "name": "postcss-zoom-font-size",
+  "version": "0.0.0",
+  "description": "PostCSS plugin zoom you font-size in new CSS file.",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "font-size",
+    "a11y"
+  ],
+  "author": "Talgat Uspanov <talgautb@yandex.kz>",
+  "license": "MIT",
+  "repository": "talgautb/postcss-zoom-font-size",
+  "bugs": {
+    "url": "https://github.com/talgautb/postcss-zoom-font-size/issues"
+  },
+  "homepage": "https://github.com/talgautb/postcss-zoom-font-size",
+  "dependencies": {
+    "postcss": "^5.0.21"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "eslint": "^2.10.0",
+    "eslint-config-postcss": "^2.0.2"
+  },
+  "scripts": {
+    "test": "ava && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5"
+  }
+}
